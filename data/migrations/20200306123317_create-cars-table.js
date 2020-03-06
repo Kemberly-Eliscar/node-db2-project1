@@ -12,10 +12,10 @@ exports.up = async function(knex) {
     //we want this data type to be unique and not nullable
 		tbl.text("vin")
 			.unique()
-            .notNullable()
+      .notNullable()
         tbl.text("make")
         tbl.text("model")
-        tbl.numeric("mileage")
+        tbl.integer("mileage")
         tbl.text("transmission_type")
         tbl.text("title_status")    
 	})
